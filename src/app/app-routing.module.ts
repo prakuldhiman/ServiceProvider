@@ -4,15 +4,11 @@ import { RouterModule, Routes } from '@angular/router';
 // routes
 const routes: Routes = [
     {
-        path: 'component1',
-        loadChildren: './modules/component1-module/component1.module#Component1Module'
-    },
-    {
-        path: 'component2',
-        loadChildren: './modules/component2-module/component2.module#Component2Module'
+        path: 'user',
+        loadChildren: 'app/modules/user-module/user.module#UserModule'
     },
 
-    { path: '**', redirectTo: '/component1' }
+    { path: '**', redirectTo: '/user' }
 ];
 
 @NgModule({

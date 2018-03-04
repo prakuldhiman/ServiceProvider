@@ -1,20 +1,25 @@
+// Modules
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { SharingModule } from './commonModules/sharing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import 'hammerjs';
-import { AppComponent } from './app.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { AppRoutingModule } from './app-routing.module';
+
+// Additional libraries
+import 'hammerjs';
+
+// Components
+import { AppComponent } from './app.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    SharingModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    AppRoutingModule,
   ],
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
