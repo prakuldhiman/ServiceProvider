@@ -2,10 +2,26 @@
     position: fixed;
     top: 0;
     left: 0;
+    background: #343a40;
+    height: 56px;
+    color: white;
+    z-index: 2;
 }
 
 .bottomToolbar{
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    background: #343a40;
+    color: white;
+    height: 200px;
+}
+
+/* .horizontal-scroll-wrapper{
+  width: 500px;
+  height: 300px;
+  overflow-y: auto !important;
+  overflow-x: hidden;
+} */
+
+.horizontal-scroll-wrapper > mat-card {
+    width: 100px;
+    height: 100px;
 }
