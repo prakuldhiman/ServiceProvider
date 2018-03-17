@@ -1,17 +1,37 @@
-<mat-toolbar class="topToolbar" fxLayout="row">
-  <div fxFlex fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px">
-    <div>Navbar</div>
-    <div>Home</div>
-    <div>Link</div>
-    <div>Disabled</div>
+<mat-toolbar class="topToolbar" fxLayout="column">
+  <div fxFlex fxLayout="row" style="width: 100%;">
+    <div fxFlex="191px"></div>
+    <div fxFlex style="padding: 11px 25px 0 0;">
+      <div class="input-group mb-3" style="min-width: 400px; height: 36px;">
+        <div class="input-group-prepend">
+          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 13px; border-right: 1px solid lightgrey;">All</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </div>
+        <input type="text" class="form-control" style="font-size: 15px;">
+        <div class="input-group-append" fxLayoutAlign="center center">
+          <label class="input-group-text" fxLayoutAlign="center center" style="padding: 6px 10px; height: 36px;">
+            <mat-icon style="font-size: 28px;" fxLayoutAlign="center center">search</mat-icon>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div fxFlex="390px"></div>
   </div>
-  <div fxFlex fxLayoutAlign="end center" fxLayoutGap="20px">
-    <div>Search</div>
-    <div>Sign In</div>
-    <div>Sign Up</div>
+  <div fxFlex fxLayout="row" style="width: 100%;">
+    <div fxFlex fxLayout="row">
+      <div fxFlex="191px"></div>
+      <div fxFlex></div>
+      <div fxFlex="390px"></div>
+    </div>
   </div>
 </mat-toolbar>
-
+<!-- 
 <div style="height: 100%; width: 100%;">
   <div fxLayout="column">
     <div style="padding-top: 56px;">
@@ -77,6 +97,6 @@
     </div>
 
   </div>
-</div>
+</div> -->
 
 <!-- <mat-toolbar class="bottomToolbar">Footer</mat-toolbar> -->
