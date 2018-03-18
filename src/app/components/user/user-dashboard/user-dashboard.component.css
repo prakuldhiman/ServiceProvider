@@ -27,3 +27,41 @@
     width: 100px;
     height: 100px;
 }
+
+.toolBarButton{
+    background: #343a40; 
+    color: white; 
+    text-align: left; 
+    height: 45px
+}
+
+.toolBarLinkButton{
+    background: #343a40; 
+    color: white; 
+    text-align: left; 
+    height: 45px;
+    font-size: 13px;
+    padding-top: 20px;
+}
+
+.toolBarButton:hover{
+    border: .5px solid lightslategray;
+}
+
+.toolBarButton:focus{
+    border: .5px solid lightgray;
+    box-shadow: unset;
+}
+
+.showMenuItem:hover .dropdown-menu{
+    display: block !important;
+    margin-top: 0;
+}
+
+.dropdownMenuItem:hover {
+    font-weight: bold; 
+}
+
+.dropdownMenuArrow:hover {
+    color: black !important;
+}
